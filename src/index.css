@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-#root,
 body,
 html {
-  display: flex;
-  flex-direction: column;
-  min-width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, p {
