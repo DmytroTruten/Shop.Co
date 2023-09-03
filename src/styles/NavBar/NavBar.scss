@@ -1,7 +1,23 @@
-.offcanvas-body__actions-container {
-  max-width: 320px !important;
-  gap: 32px;
+.offcanvas-body-actions-container {
+  height: 100%;
+  width: 100% !important;
 }
+
+.nav-link {
+  padding: 8px 12px !important;
+  font-weight: 600 !important;
+  color: #3e4265 !important;
+}
+
+.switch-theme-text {
+  color: #585c7b;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
 .toggle-switch {
   width: 46px;
   height: 24px;
@@ -27,4 +43,17 @@
   border: none;
   padding: 9px 20px;
   font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .offcanvas-body-actions-container {
+    max-width: fit-content !important;
+    gap: 32px;
+  }
 }
