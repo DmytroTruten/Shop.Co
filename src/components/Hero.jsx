@@ -3,7 +3,6 @@ import AppstoreBtn from "../assets/MobileApp/AppstoreBtn.svg";
 import GooglePlayBtn from "../assets/MobileApp/GooglePlayBtn.svg";
 import iPhone12ProFirst from "../assets/MobileApp/iPhone12ProFirst.svg";
 import iPhone12ProSecond from "../assets/MobileApp/iPhone12ProSecond.svg";
-
 import "../styles/Hero/Hero.css";
 
 export default function Hero() {
