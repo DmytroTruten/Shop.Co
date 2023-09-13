@@ -1,48 +1,35 @@
-import { Container, Image, Nav, Navbar, Offcanvas } from "react-bootstrap";
-import Logo from "../assets/Logo.svg";
-import User from "../assets/User.svg";
+import { Container, Navbar, NavbarBrand } from "react-bootstrap";
+import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 import "../styles/NavBar/NavBar.css";
+import SearchIcon from "../assets/NavBar/SearchIcon.svg";
+import CartIcon from "../assets/NavBar/CartIcon.svg";
+import ProfileIcon from "../assets/NavBar/ProfileIcon.svg";
 
 export default function NavBar() {
   return (
-    <Navbar fixed="top" expand="lg">
-      <Container>
-        <Navbar.Brand>
-          <Image src={Logo} />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-offcanvas" className="p-1" />
-        <Navbar.Offcanvas
-          id="navbar-offcanvas"
-          placement="end"
-          restoreFocus={false}
-        >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title>
-              <Image src={Logo} />
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body className="d-flex flex-column flex-lg-row justify-content-between align-items-center">
-            <Nav>
-              <Nav.Link className="text-center">Features</Nav.Link>
-              <Nav.Link className="text-center">Overview</Nav.Link>
-              <Nav.Link className="text-center">Store</Nav.Link>
-              <Nav.Link className="text-center">Blog</Nav.Link>
-              <Nav.Link className="text-center">Contact</Nav.Link>
-            </Nav>
-            <Container className="offcanvas-body-actions-container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between px-0 mx-0 mt-2 mt-lg-0">
-              <div className="d-flex">
-                <p className="switch-theme-text mb-0">Light</p>
-                <span className="toggle-switch mx-3"></span>
-                <p className="switch-theme-text mb-0">Dark</p>
-              </div>
-              <button className="sign-in-btn d-flex align-items-center justify-content-center">
-                <img className="me-2" src={User} />
-                <p className="mb-0">Sign in / up</p>
-              </button>
-            </Container>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
+    <>
+      <Container
+        fluid
+        className="navbar-discount-container d-flex justify-content-center py-2"
+      >
+        <p className="navbar-discount-text text-center mb-0">
+          Sign up and get 20% off to your first order.{" "}
+          <span className="navbar-discount-link">Sign Up Now</span>
+        </p>
       </Container>
-    </Navbar>
+      <Navbar expand="lg">
+        <Container fluid>
+          <div className="d-flex align-items-center">
+            <NavbarToggle/>
+            <NavbarBrand className="py-0 m-0">SHOP.CO</NavbarBrand>
+          </div>
+          <div className="navbar-actions-container d-flex">
+            <img src={SearchIcon} alt="SearchIcon" />
+            <img src={CartIcon} alt="CartIcon" />
+            <img src={ProfileIcon} alt="ProfileIcon" />
+          </div>
+        </Container>
+      </Navbar>
+    </>
   );
 }

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url("fonts/Satoshi/stylesheet.css");
+@import url("fonts/IntegralCF/stylesheet.css");
 
 body,
 html {
@@ -6,18 +7,6 @@ html {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, p {
-  font-family: "Manrope", Helvetica, Arial, sans-serif;
-}
-
-h1 {
-  color: #131022;
-  font-weight: 800;
-  line-height: 130%;
-}
-
-h5 {
-  font-size: 18px;
-  color: #585C7B;
-  line-height: 160%;
+p {
+  font-family: "Satoshi", "Arial";
 }

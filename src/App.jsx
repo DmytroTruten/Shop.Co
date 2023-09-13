@@ -1,5 +1,5 @@
-import MobileApp from "./pages/MobileApp";
+import Home from "./pages/Home";
 
 export default function App() {
-  return <MobileApp />;
+  return <Home />;
 }
