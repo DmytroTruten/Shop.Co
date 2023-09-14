@@ -7,6 +7,6 @@ html {
   min-height: 100vh;
 }
 
-p {
+p, a {
   font-family: "Satoshi", "Arial";
 }
