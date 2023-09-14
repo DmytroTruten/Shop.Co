@@ -1,0 +1,63 @@
+.hero-section-container {
+  padding-top: 40px;
+  background-color: #f2f0f1;
+}
+
+.hero-title {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.hero-subtitle {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 0px 24px;
+}
+
+.hero-shop-btn-container {
+  margin-bottom: 20px;
+}
+
+.hero-shop-btn {
+  width: clamp(0px, 100%, 358px);
+  height: 52px;
+  padding: 16px 54px;
+  border-radius: 62px;
+  background: #000;
+  color: #fff;
+  font-family: "Satoshi";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-statistics-divider {
+  background: rgba(0, 0, 0, 0.1);
+  width: 1px;
+  height: 100%;
+}
+
+.hero-statistics-number {
+  color: #000;
+  font-family: "Satoshi";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.hero-statistics-text {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Satoshi";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.hero-statistics-col:nth-child(2) {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.hero-statistics-col:nth-child(3) {
+  margin: 12px 0px 0px;
+}/*# sourceMappingURL=Hero.css.map */

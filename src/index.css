@@ -7,6 +7,10 @@ html {
   min-height: 100vh;
 }
 
+h1 {
+  font-family: "Integral CF";
+}
+
 p, a {
   font-family: "Satoshi", "Arial";
 }
