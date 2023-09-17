@@ -32,7 +32,7 @@ export default function NavBar() {
         </p>
       </Container>
       <Navbar expand="lg" className="py-4">
-        <Container className="navbar-inner-container">
+        <Container className="navbar-inner-container px-lg-0">
           <div className="d-flex align-items-center">
             <NavbarToggle className="p-0" aria-controls="offcanvas-navbar" />
             <p className="navbar-brand-text m-0">SHOP.CO</p>

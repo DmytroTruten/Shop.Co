@@ -1,6 +1,9 @@
-.hero-section-container {
-  padding-top: 40px;
+.hero-section-background {
   background-color: #f2f0f1;
+}
+
+.hero-section-container {
+  padding-top: 40px !important;
 }
 
 .hero-title {
@@ -60,13 +63,36 @@
   width: min-content;
 }
 
+.hero-img {
+  width: 100%;
+}
+
 @media (max-width: 575px) {
   .hero-statistics-row {
     max-width: 278px;
   }
 }
 @media (min-width: 576px) {
+  .hero-shop-btn {
+    max-width: 210px;
+  }
   .hero-statistics-row {
-    max-width: 596px;
+    max-width: 596px !important;
+  }
+}
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .hero-subtitle {
+    margin: 32px 0px;
+  }
+  .hero-subtitle, .hero-statistics-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .hero-shop-btn-container {
+    margin-bottom: 48px;
   }
 }/*# sourceMappingURL=Hero.css.map */
