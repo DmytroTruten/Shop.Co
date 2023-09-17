@@ -22,30 +22,34 @@ export default function Hero() {
           </button>
         </div>
         <Container className="d-flex justify-content-center align-items-center">
-          <Row className="w-100">
-            <Col className="hero-statistics-col d-flex flex-column justify-content-center px-0">
-              <h3 className="hero-statistics-number mb-0">200+</h3>
-              <p className="hero-statistics-text text-nowrap mb-0">
-                International Brands
-              </p>
+          <Row className="hero-statistics-row w-100">
+            <Col className="hero-statistics-col d-flex flex-column justify-content-center align-items-center px-0">
+              <div className="hero-statistics-inner-col">
+                <h3 className="hero-statistics-number mb-0">200+</h3>
+                <p className="hero-statistics-text text-nowrap mb-0">
+                  International Brands
+                </p>
+              </div>
             </Col>
-            <Col xs="auto">
-              <span className="hero-statistics-divider d-block"></span>
+            {width > 294 && (
+              <Col className="d-flex justify-content-center">
+                <span className="hero-statistics-divider d-block"></span>
+              </Col>
+            )}
+            <Col className="hero-statistics-col d-flex flex-column justify-content-center align-items-center px-0">
+              <div className="hero-statistics-inner-col">
+                <h3 className="hero-statistics-number mb-0">2000+</h3>
+                <p className="hero-statistics-text text-nowrap mb-0">
+                  High-Quality Products
+                </p>
+              </div>
             </Col>
-            <Col className="hero-statistics-col d-flex flex-column justify-content-center px-0">
-              <h3 className="hero-statistics-number mb-0">2000+</h3>
-              <p className="hero-statistics-text text-nowrap mb-0">
-                High-Quality Products
-              </p>
-            </Col>
-            {width >= 397 && (
-              <Col xs="auto">
+            {width >= 576 && (
+              <Col className="d-flex justify-content-center">
                 <span className="hero-statistics-divider d-block"></span>
               </Col>
             )}
             <Col
-              xs={12}
-              sm="auto"
               className={`hero-statistics-col d-flex flex-column justify-content-center align-items-center ${
                 width < 576 ? "mt-3" : ""
               } px-0`}

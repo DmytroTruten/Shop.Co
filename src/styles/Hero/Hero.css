@@ -58,4 +58,15 @@
 .hero-statistics-inner-col {
   width: -moz-min-content;
   width: min-content;
+}
+
+@media (max-width: 575px) {
+  .hero-statistics-row {
+    max-width: 278px;
+  }
+}
+@media (min-width: 576px) {
+  .hero-statistics-row {
+    max-width: 596px;
+  }
 }/*# sourceMappingURL=Hero.css.map */
